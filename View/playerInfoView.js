@@ -4,7 +4,7 @@ function playerInfoView() {
 
     // Optional player-image mapping (based on id or username)
     const imageMap = {
-        2: "images/ola.png",
+        2: "images/Ola.png",
         3: "images/Vujan2.png",
         1: "images/Kenneth2.png"
     };
