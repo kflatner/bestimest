@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
+<body onload="updateView()">
   <div id="app"></div>
 
   <!-- Load scripts in correct order, using RELATIVE paths -->
@@ -16,15 +16,7 @@
   <script src="View/nextActivityView.js"></script>
   <script src="View/mainView.js"></script> <!-- This contains updateView() -->
 
-  <!-- Call updateView ONLY after scripts are loaded -->
-  <script>
-    window.onload = () => {
-      if (typeof updateView === "function") {
-        updateView();
-      } else {
-        console.error("updateView is not defined — check script paths.");
-      }
-    };
+ 
   </script>
 </body>
 </html>
