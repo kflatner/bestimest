@@ -15,10 +15,11 @@ html, body {
 
   background-image: url("../images/bestimest.png");
   background-repeat: no-repeat;
-  background-size: cover;         /* Scale to fill screen */
-  background-position: center;    /* Keep it centered */
-  background-attachment: fixed;   /* Optional: keeps background in place on scroll */
+  background-size: cover;
+  background-position: top center; /* Show top of image on mobile */
+  background-attachment: fixed;
 }
+
 
 
 header {
@@ -123,4 +124,8 @@ tr:hover {
   font-size: 1.2rem;
   margin: 0.5rem 0;
 }
-
+@media (max-width: 768px) {
+  html, body {
+    background-image: url("../images/bestimest-mobile.png");
+  }
+}
