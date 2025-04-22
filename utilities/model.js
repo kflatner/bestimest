@@ -11,7 +11,7 @@ data: {
     players:[
         {
         id:1,
-        username: 'Vujan',
+        username: 'Kenneth',
         },
         {
         id:2,
@@ -19,7 +19,7 @@ data: {
         },
         {
         id:3,
-        username: 'Kenneth',
+        username: 'Vujan',
         },
 
     ],
@@ -36,38 +36,38 @@ data: {
         {
             activityId: 1, // discgolf
             first: 2,      // Ola
-            second: 1,     // Vujan
-            third: 3       // Kenneth
+            second: 3,     // Vujan
+            third: 1       // Kenneth
         },
         {
             activityId: 2, 
-            first: 1,
+            first: 3,
             second: 2,
-            third: 3
+            third: 1
         },
         {
             activityId: 3,
             first: 2,
-            second: 3,
-            third: 1
+            second: 1,
+            third: 3
         },
         {
             activityId: 4, 
             first: 2,
-            second: 1,
-            third: 3
+            second: 3,
+            third: 1
         },
         {
             activityId: 5, 
             first: 2,
-            second: 1,
-            third: 3
+            second: 3,
+            third: 1
         },
         {
             activityId: 6, 
             first: 2,
-            second: 3,
-            third: 1
+            second: 1,
+            third: 3
         },
         {
             activityId: '', 
