@@ -124,3 +124,55 @@ tr:hover {
   font-size: 1.2rem;
   margin: 0.5rem 0;
 }
+.player-container {
+  display: flex;
+  height: 100%; /* Fill entire content area */
+  width: 100%;
+}
+
+.player-button {
+  flex: 1; /* Take up 1/3 each */
+  height: 100%; /* Stretch full height */
+  background-size: cover;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  transition: filter 0.2s ease;
+  background-repeat: no-repeat;
+}
+
+.player-button:hover {
+  filter: brightness(1.1);
+}
+.player-info-container {
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-radius: 12px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  max-width: 400px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.player-info-container h2 {
+  font-size: 2rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.player-info-container p {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.player-profile {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  margin-bottom: 1rem;
+}
+

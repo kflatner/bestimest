@@ -11,6 +11,12 @@ function updateView(){
             case 'nextActivites':
                 currentView = nextActivityView();
                 break;
+            case 'players':
+                currentView = playerView();
+                break;
+            case 'playerInfo':
+                currentView = playerInfoView();
+                break;
     }
 
     document.getElementById('app').innerHTML = /*HTML*/`
@@ -29,7 +35,8 @@ function updateView(){
         <button onclick="model.app.currentPage='tabell'; updateView()"> Tabell</button>
         <button onclick="model.app.currentPage='activites'; updateView()"> idretter</button>
         <button onclick="model.app.currentPage='nextActivites'; updateView()"> Neste Aktivitet</button>
-        <button>Spillere </button>
+        <button onclick="model.app.currentPage='players'; updateView()"> Spillere</button>
+        
       
         
         </footer>
