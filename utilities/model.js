@@ -73,9 +73,9 @@ data: {
         },
         {
             activityId: 7, 
-            first: '',
-            second: '',
-            third: ''
+            first: 2,
+            second: 1,
+            third: 3
         },
         {
             activityId: '', 
