@@ -11,7 +11,7 @@ function playerInfoView() {
     let score = 0;
     const results = model.data.results || [];
 
-    // 🏆 Find all activities the player won (1st place)
+    
     const wonActivities = [];
 
     for (let result of results) {
