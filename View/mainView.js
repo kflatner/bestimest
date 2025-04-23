@@ -20,10 +20,12 @@ function updateView(){
     }
 
     document.getElementById('app').innerHTML = /*HTML*/`
-    <header class="header-banner">
+    <header onclick="model.app.currentPage='tabell'; updateView()" class="header-banner">
     
   
-    <h1>Best i mest</h1>
+    <h1>🏆 Best i Mest 🏆</h1>
+
+
     </header>
 
         <main id="content"> 

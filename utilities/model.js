@@ -25,12 +25,13 @@ data: {
 
     ],
     activities:[
-        {id:1, sport: "discgolf"},
-        {id:2, sport: "tabletennis"},
-        {id:3, sport: "dart"},
-        {id:4, sport: "bowling"},
-        {id:5, sport: "kubb"},
-        {id:6, sport: "swimming"},
+        {id:1, sport: "Discgolf"},
+        {id:2, sport: "Bordtennis"},
+        {id:3, sport: "Dart"},
+        {id:4, sport: "Bowling"},
+        {id:5, sport: "Kubb"},
+        {id:6, sport: "Lek i vannet"},
+        {id:7, sport: "Bueskyting"},
     ],
     
     results: [
@@ -69,6 +70,12 @@ data: {
             first: 2,
             second: 1,
             third: 3
+        },
+        {
+            activityId: 7, 
+            first: '',
+            second: '',
+            third: ''
         },
         {
             activityId: '', 
