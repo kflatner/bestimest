@@ -32,6 +32,8 @@ data: {
         {id:5, sport: "Kubb"},
         {id:6, sport: "Lek i vannet"},
         {id:7, sport: "Bueskyting"},
+        {id:8, sport: "Worms"},
+        {id:9, sport: "Sjakk"},
     ],
     
     results: [
@@ -78,7 +80,13 @@ data: {
             third: 3
         },
         {
-            activityId: '', 
+            activityId: 8, 
+            first: 3,
+            second: 2,
+            third: 1
+        },
+        {
+            activityId: 9, 
             first: '',
             second: '',
             third: ''
