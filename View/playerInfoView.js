@@ -10,8 +10,6 @@ function playerInfoView() {
 
     let score = 0;
     const results = model.data.results || [];
-
-    
     const wonActivities = [];
 
     for (let result of results) {
@@ -26,9 +24,11 @@ function playerInfoView() {
         }
     }
 
-    // 🧾 Format best-in list or fallback text
-    const bestText = wonActivities.length > 0
-        ? wonActivities.join(', ')
+    
+    const uniqueWonActivities = [...new Set(wonActivities)];
+
+    const bestText = uniqueWonActivities.length > 0
+        ? uniqueWonActivities.join(', ')
         : "Ikke best i noe... enda!";
 
     return /*HTML*/ `

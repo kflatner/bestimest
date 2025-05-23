@@ -17,6 +17,12 @@ function updateView(){
             case 'playerInfo':
                 currentView = playerInfoView();
                 break;
+            case 'rematchRegler':
+                currentView = rematchReglerView();
+                break;
+            case 'activitiesInfo':
+                currentView = activitiesInfoView();
+                break;
     }
 
     document.getElementById('app').innerHTML = /*HTML*/`
@@ -38,6 +44,7 @@ function updateView(){
         <button onclick="model.app.currentPage='activites'; updateView()"> idretter</button>
         <button onclick="model.app.currentPage='nextActivites'; updateView()"> Neste Aktivitet</button>
         <button onclick="model.app.currentPage='players'; updateView()"> Spillere</button>
+        <button onclick="model.app.currentPage='rematchRegler'; updateView()"> Regler</button>
         
       
         
