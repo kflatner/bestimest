@@ -26,15 +26,15 @@ data: {
 
     ],
     activities:[
-        {id:1, sport: "Discgolf"},
-        {id:2, sport: "Bordtennis"},
-        {id:3, sport: "Dart"},
-        {id:4, sport: "Bowling"},
-        {id:5, sport: "Kubb"},
-        {id:6, sport: "Lek i vannet"},
-        {id:7, sport: "Bueskyting"},
-        {id:8, sport: "Worms"},
-        {id:9, sport: "Sjakk"},
+        {id:1, sport: "Discgolf" ,image:""},
+        {id:2, sport: "Bordtennis",image:""},
+        {id:3, sport: "Dart",image:""},
+        {id:4, sport: "Bowling",image:""},
+        {id:5, sport: "Kubb",image:""},
+        {id:6, sport: "Lek i vannet",image:""},
+        {id:7, sport: "Bueskyting",image:"images/BIB_bue.png"},
+        {id:8, sport: "Worms",image:""},
+        {id:9, sport: "Sjakk",image:""},
     ],
     
     results: [

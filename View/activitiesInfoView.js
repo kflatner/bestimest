@@ -3,12 +3,16 @@ function activitiesInfoView() {
 
     const activity = model.data.activities.find(a => a.id === activityId);
     const results = model.data.results.filter(r => r.activityId === activityId);
+    const bgImage = activity?.image || '';
 
     if (!activityId) return `<p>Ingen aktivitet valgt. selectedActivityId = ${activityId}</p>`;
     if (!activity) return `<p>Fant ikke aktivitet med ID: ${activityId}</p>`;
     if (results.length === 0) return `<p>Ingen resultater for ${activity.sport} (ID: ${activityId})</p>`;
 
     let html = `
+     <div class="activity-info-view" style="height: 700px;  background-image: url('${bgImage}');background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center top  ;">
         <h2>${activity.sport}</h2>
         <table>
             <tr>
@@ -37,11 +41,11 @@ function activitiesInfoView() {
 
     html += `</table>`;
 
-    // 🎯 Show extra info for the last round
+    
     const lastResult = results.at(-1);
     if (lastResult?.location || lastResult?.weather || lastResult?.summary) {
         html += `
-            <div class="activity-extra">
+            <div class="activity-extra" style="float: left; width: 600px; margin-right: 20px;">
                 <h3>Ekstrainfo for siste runde:</h3>
                 ${lastResult.location ? `<p><strong>Sted:</strong> ${lastResult.location}</p>` : ''}
                 ${lastResult.weather ? `<p><strong>Vær:</strong> ${lastResult.weather}</p>` : ''}
