@@ -34,7 +34,7 @@ data: {
         {id:6, sport: "Lek i vannet",image:""},
         {id:7, sport: "Bueskyting",image:"images/BIB_bue.png"},
         {id:8, sport: "Worms",image:""},
-        {id:9, sport: "Sjakk",image:""},
+        {id:9, sport: "Badmington",image:"images/BIB_badmington.png"},
     ],
     
     results: [
@@ -119,6 +119,15 @@ data: {
             location:"Bugården DiscGolf bane.",
             weather:"Sol og litt overskyet",
             summary:"Ola var overlegen, men Vujan og Kenneth kjempet om andre plass!" 
+        },
+        {
+            activityId: 9, 
+            first: 2,
+            second: 1,
+            third: 3,
+            location:"Jotun Hallen,Bugården.",
+            weather:"Vi var inne i hallen, så var vanskelig å se..",
+            summary:"Her var det konkuranse om den gjeve andre plassen! Vujan tok første stikk mot Kenneth, men de neste 2 rundene visste Kenneth: At han har drevet med strand spill før!" 
         },
         
 ],
