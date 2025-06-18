@@ -3,8 +3,8 @@ function nextActivityView() {
         <div class="next-activity-container">
             <h2>Neste aktivitet</h2>
             <p><strong>Vujan</strong></p>
-            <p>Aktivitet: <strong>-Ikke satt-</strong></p>
-            <p> -Ikke satt- </p>
+            <p>Aktivitet:  <strong>-Minigolf-</strong></p>
+            <p> -Søndag- </p>
         </div>
     `;
 }
